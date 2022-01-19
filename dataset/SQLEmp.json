@@ -1,0 +1,40 @@
+{
+	"name": "SQLEmp",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLServerSelfHosted",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "emp_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "emp_name",
+				"type": "varchar"
+			},
+			{
+				"name": "Gender",
+				"type": "varchar"
+			},
+			{
+				"name": "Country",
+				"type": "varchar"
+			},
+			{
+				"name": "Salary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "emp"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
